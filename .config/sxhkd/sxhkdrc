@@ -11,8 +11,8 @@ super + @space
 	dmenu_run
 
 # programs
-alt + {b,f,r}
-	{firefox,thunar,shortwave}
+alt + {b,f,r,m}
+	{firefox,thunar,shortwave,thunderbird}
 
 # make sxhkd reload its configuration files:
 super + Escape
