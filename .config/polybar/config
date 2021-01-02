@@ -74,7 +74,7 @@ modules-right = updates filesystem pulseaudio xkeyboard memory cpu temperature w
 
 tray-position = right
 tray-padding = 2
-tray-background = #2e3440
+tray-background = #363c4a
 
 ;wm-restack = bspwm
 ;wm-restack = i3

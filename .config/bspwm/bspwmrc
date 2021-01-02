@@ -2,6 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
+lxsession &
 setxkbmap -layout gb &
 nitrogen --restore &
 picom &
@@ -12,6 +13,7 @@ killall "nm-applet"
 nm-applet &
 killall "volumeicon"
 volumeicon &
+udiskie -t &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
