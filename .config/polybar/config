@@ -68,7 +68,7 @@ font-3 = FontAwesome5Free:style=Solid:size=10;2
 font-4 = FontAwesome5Free:style=Regular:size=10;2
 font-5 = FontAwesome5Brands:style=Regular:size=10;2
 
-modules-left = bspwm
+modules-left = jgmenu bspwm
 modules-center = xwindow
 modules-right = updates filesystem pulseaudio xkeyboard memory cpu temperature wlan eth date powermenu
 
@@ -439,6 +439,13 @@ exec = ~/.config/polybar/scripts/updates.sh
 interval = 600
 
 click-left = alacritty -e yay -Syu
+
+[module/jgmenu]
+type = custom/text
+content-padding = 2
+content =  menu
+click-left = "jgmenu_run >/dev/null 2>&1 &"
+
 
 [settings]
 screenchange-reload = true
