@@ -133,6 +133,7 @@ label-focused-padding = 2
 
 label-occupied = %index%
 label-occupied-padding = 2
+label-occupied-foreground = ${colors.red}
 
 label-urgent = %index%!
 label-urgent-background = ${colors.alert}
@@ -444,7 +445,10 @@ click-left = alacritty -e yay -Syu
 type = custom/text
 content-padding = 2
 content =  menu
+content-foreground = ${colors.orange}
 click-left = "jgmenu_run >/dev/null 2>&1 &"
+
+
 
 
 [settings]

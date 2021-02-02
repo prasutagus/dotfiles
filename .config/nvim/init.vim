@@ -19,7 +19,7 @@ call plug#end()
 " "filetype plugin on
  syntax on
  syntax enable
- set laststatus=2
+ " set laststatus=2
  set cmdheight=2
  set title
  set wildmode=longest,list,full
@@ -28,8 +28,8 @@ call plug#end()
  set noswapfile
  set nowritebackup
  set incsearch
- set backspace=indent,eol,start
- set autoindent
+ " set backspace=indent,eol,start
+ " set autoindent
  set splitbelow splitright
  set showbreak=...
 
