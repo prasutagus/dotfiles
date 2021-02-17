@@ -28,6 +28,8 @@ call plug#end()
  set noswapfile
  set nowritebackup
  set incsearch
+ set nohlsearch
+ set clipboard+=unnamedplus
  " set backspace=indent,eol,start
  " set autoindent
  set splitbelow splitright
