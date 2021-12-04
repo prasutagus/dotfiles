@@ -48,6 +48,33 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-# xsetroot -cursor_name left_ptr
-# exec bspwm
-# exec openbox-session
+# Keyboard
+setxkbmap -layout gb &
+
+# Compositor
+picom &
+
+# Wallpaper
+nitrogen --restore &
+
+# DWM Panel
+dwmblocks &
+
+# Notification
+dunst &
+
+# Thunar
+thunar --daemon &
+
+# MPD daemon start (if no other user instance exists)
+[ ! -s ~/.config/mpd/pid ] && mpd
+
+mpd-notification &
+
+# Loop DWM for restart
+while true; do
+	dwm >/dev/null 2>&1
+done
+
+# Start DWM
+exec dwm
